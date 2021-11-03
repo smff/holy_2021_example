@@ -1,0 +1,66 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.container {
+    background: url("./images/container.jpg");
+}
+
+.fence {
+    /*background: url("./images/fence.jpg");*/
+}
+
+#react-app {
+    background: url("./images/react_white.png");
+}
+
+#angular-app {
+    background: url("./images/angular_white.png");
+}
+
+#svelte-app {
+    background: url("./images/svelte_white.png");
+}
+
+.app {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background-size: 77px !important;
+    font-size: 456px;
+    border: 10px solid transparent;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #777;
+
+    transition: background-size 0.3s ease-in;
+    -moz-transition: background-size 0.3s ease-in;
+    -ms-transition: background-size 0.3s ease-in;
+    -o-transition: background-size 0.3s ease-in;
+    -webkit-transition: background-size 0.3s ease-in;
+    user-select: none;
+}
+
+.app:hover {
+    background-size: 57px !important;
+    transition: background-size 0.3s ease-in;
+    -moz-transition: background-size 0.3s ease-in;
+    -ms-transition: background-size 0.3s ease-in;
+    -o-transition: background-size 0.3s ease-in;
+    -webkit-transition: background-size 0.3s ease-in;
+}

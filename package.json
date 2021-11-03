@@ -1,0 +1,27 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"yarn container\" \"yarn react\" \"yarn angular\" \"yarn svelte\"",
+    "container": "yarn workspace container dev",
+    "react": "yarn workspace react dev",
+    "angular": "yarn workspace angular dev",
+    "svelte": "yarn workspace svelte dev"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.2",
+    "dom-pubsub": "^0.1.0"
+  }
+}

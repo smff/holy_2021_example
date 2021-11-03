@@ -1,0 +1,18 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config config/webpack.config.js",
+    "container:build": "webpack --config config/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.3.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1"
+  }
+}
